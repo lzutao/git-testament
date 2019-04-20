@@ -1,8 +1,13 @@
+dist: xenial
 language: rust
 rust:
   - stable
   - beta
   - nightly
+git:
+  depth: 1
+  quiet: true
+  submodules: false
 matrix:
   allow_failures:
     - rust: nightly
